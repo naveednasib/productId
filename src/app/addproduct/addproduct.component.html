@@ -1,0 +1,39 @@
+<table>
+
+  <tr>
+    <td>Prices </td>
+    <td>{{prices}}</td>
+  </tr>
+
+  <tr>
+    <td>Cycle </td>
+    <td>{{cycle}}</td>
+  </tr>
+
+
+  <tr>
+      <td>Addon </td>
+      <td>{{addon}}</td>
+    </tr>
+
+  <tr>
+      <td>Page </td>
+      <td>{{page}}</td>
+    </tr>
+
+  <tr *ngIf="elementStatus">
+      <td>Affiliate  </td>
+      <td>{{affiliate}}</td>
+    </tr>
+
+  <tr *ngIf="elementStatus">
+      <td>Country </td>
+      <td>{{country}}</td>
+    </tr>
+
+</table>
+
+
+<button on-click="toggle_detail()" >
+  {{elementStatus ? "Hide":"show"}} detail
+</button>
